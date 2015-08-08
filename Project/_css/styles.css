@@ -1,0 +1,242 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/*-------------------------------------
+| Resets
+-------------------------------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/*-------------------------------------
+| root
+-------------------------------------*/
+body { background-color: #fff4f0; margin: 0px;}
+
+.page-wrapper {
+	width: 95%;
+	max-width: 1200px;
+	min-width: 320px;
+	background-color: #fff4f0;
+	padding: 0px;
+	margin: center;
+}
+
+/*-------------------------------------
+| first children
+-------------------------------------*/
+.intro 		{ background-color: #fff4f0; padding: 10px; }
+.supporting { background-color: #fff4f0; padding: 0px; }
+.sidebar 	{ background-color: #fff4f0; padding: 10px; }
+
+
+/*-------------------------------------
+| .intro children
+-------------------------------------*/
+.intro header 		{ background-color: #fff4f0; padding: 0px; float: left; width: 300px;}
+.intro .summary 	{ background-color: #fff4f0; padding: 0px; float: left; width: 305px;}
+.intro .preamble 	{ background-color: #fff4f0; padding: 14px; float: left; width: 300px; margin-top: 100px; }
+
+
+/*-------------------------------------
+| .supporting children
+-------------------------------------*/
+.supporting .explanation	{ background-color: #fff4f0; padding: 10px; margin-top: -401px; float: left; width: 300px;}
+.supporting .participation 	{ background-color: #fff4f0; padding: 10px; width: 300px; margin-top: -4px; }
+.supporting .benefits 		{ background-color: #fff4f0; padding: 10px; margin-top: -480px; margin-left: 303px; float: left; width: 300px;}
+.supporting .requirements 	{ background-color: #fff4f0; padding: 10px; margin-top: -308px; margin-left: 304px; float: left; width: 300px;}
+.supporting footer 			{ background-color: #fff4f0; padding: 10px; }
+
+
+/*-------------------------------------
+| .sidebar children
+-------------------------------------*/
+.sidebar .design-selection	{ background-color: #fff4f0; padding: 10px; }
+.sidebar .design-archives 	{ background-color: #fff4f0; padding: 0px; }
+.sidebar .zen-resources 	{ background-color: #fff4f0; padding: 10px; }
+
+.image {width: 300px; height: 100px;}
+
+/*-------------------------------------
+| Resoponsive
+-------------------------------------*/
+@media screen and (min-width:500px) {
+
+	body { background-color: #fff4f0; }
+
+
+}
+@media screen and (min-width:900px) {
+
+	body { background-color: #fff4f0;
+	background-position: center; 
+
+}
+
+	.page-wrapper {
+		position: relative;
+		padding: 90px; 
+	}
+
+	.intro { width: 70%; }
+	.supporting { width: 70%; }
+
+	.sidebar {
+		width: 30%;
+
+		position: absolute;
+		right: 0px; 
+		top: 0px; 
+	}
+}
+
+
+/* Sidebar Navigation 
+Get rid of bulleted lists*/
+nav ul { margin: 0px; padding: 0px; }
+nav li { list-style-type: none; display: inline; }
+
+.zen-resources ul { margin: 0px; padding: 0px; }
+.zen-resources li { list-style-type: none; display: inline; }
+
+/*Zen resources and Archives*/
+
+.zen-resources a, .design-archives a {
+	display: block;
+
+	line-height: 50px;
+	background-color: #be7173;
+	color: white;
+	margin-bottom: 5px;
+
+	font-family: Helvetica;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.zen-resources a:hover, .design-archives a:hover 
+	{ background-color: #facccf; }
+
+/* Select a Design */
+
+.design-selection a.design-name {
+	display: block;
+	background-color: #be7173;
+
+	line-height: 50px;
+	background-color: #fff4f0;
+	color: #46403b;
+	margin-bottom: 5px;
+
+	font-family: Helvetica;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+
+}
+
+.design-selection a.design-name:hover 
+	{ background-color: #be7173; }
+
+/*this targets the "by" */
+.design-selection li {
+	display: block;
+	color: #be7173;
+	margin-bottom: 20px;
+	font-size: 12px;
+	text-align: right;
+}
+
+/*targets the designer-name link*/
+.design-selection a.designer-name {
+	color: #46403b;
+	font-family: Helvetica;
+}
+
+
+/* H3 Animated Backgrounds*/
+
+h3 {
+	line-height: 100px;
+	font-size: 20px;
+	font-family: Helvetica;
+	font-family: 'Lato', sans-serif;
+
+	background-color: #3339B8;	
+	background-image: url(../_img/h3-pillbackground.jpg);
+	color: #be7173;
+	text-align: center;
+
+	background-position: left top; 
+
+	transition: all 2s;
+
+}
+
+h3:hover { background-position: left bottom; 
+			transition: all .5s; 
+			color: #46403b;}
+
+.sidebar h3 { font-size: 18px; line-height: 50px; }
+
+p:before {
+	content: "   ";
+}
+p:after { content: "✚"; font-size: 40px; color: #be7173; }
+
+/* Kellum Technique */
+
+p {font-family: Helvetica; font-size: 10px;}
+
+h1 {background-image: url(../_img/CSS-Zen-Garden-logo.jpg);
+	width: 1100px;
+	height: 125px;
+	margin-left: 235px;
+	background-repeat: no-repeat;
+	position: relative;
+
+	/*kellum*/
+	text-indent: 150%;
+	font-size: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+
+
+}
+
+a:link {color: #be7173; }
+
+#headerimage
+{
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 100px;*/
+    display: block;
+       
+}
+
+
+/*
+
+.intro {width: 369px; 
+	float: left;}
+
+.supporting .participation {width: 369px;
+							float: right;}
+
+							*/
+
+h2 {font-family: Helvetica; color: #be7173; font-size: 15px; }
